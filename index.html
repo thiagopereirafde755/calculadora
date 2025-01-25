@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="tela" disabled>
+            <div class="buttons">
+                <button class="btn clear" onclick="limpar()">C</button>
+                <button class="btn" onclick="ApagarUltima()">←</button>
+                <button class="btn" onclick="valor('+')">+</button>
+                <button class="btn" onclick="valor('-')">-</button>
+                <button class="btn" onclick="calcular()">=</button>
+                <button class="btn" onclick="valor('.')">.</button>
+                <button class="btn" onclick="valor('*')">*</button>
+                <button class="btn" onclick="valor('/')">/</button>
+                <button class="btn" onclick="valor('%')">%</button>
+                <button class="btn" onclick="valor('7')">7</button>
+                <button class="btn" onclick="valor('8')">8</button>
+                <button class="btn" onclick="valor('9')">9</button>
+                <button class="btn" onclick="valor('4')">4</button>
+                <button class="btn" onclick="valor('5')">5</button>
+                <button class="btn" onclick="valor('6')">6</button>
+                <button class="btn" onclick="valor('1')">1</button>
+                <button class="btn" onclick="valor('2')">2</button>
+                <button class="btn" onclick="valor('3')">3</button>
+                <button class="btn" onclick="valor('0')">0</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="creditos">
+                <hr  class="hr-credito" style="width: 100%;">
+                <p>Desenvolvido por Thiago Pereira</p>
+                <a href="https://github.com/thiagopereirafde755" target="_blank"><img src="img/icone/github.png" id="git-link"></a>
+                </div>
+                <hr  class="hr-credito" style="width: 100%;">
+                <div class="portifolio">
+                    <br>
+                    <p id="portfolio">Visite meu portifolio<a href="https://thiago-pereira.netlify.app/" target="_blank"> Clique aqui</a></p>
+                </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
